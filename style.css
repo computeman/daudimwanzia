@@ -1,3 +1,35 @@
 body {
-  background: blue;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  background-color: rgb(207, 223, 235);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s;
+}
+.navbar img {
+  height: 50px;
+  width: 250px;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  margin: 0 30px;
+  color: black;
+  font-family: sans-serif;
+}
+.navbar ul li a:hover {
+  color: red;
+}
+.navbar.active {
+  background-color: black;
+}
+.navbar.active ul li a {
+  color: white;
 }
