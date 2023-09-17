@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .navbar {
   display: flex;
-  background-color: rgb(207, 223, 235);
+  background-color: #054850;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -35,13 +35,14 @@ body {
   color: white;
 }
 
+
 .big-image {
   height: 100vh;
   width: 100vw;
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("/images/hero.jpg");
+  background-image: url("./images/hero.jpg");
 }
 
 .overlay {
@@ -67,4 +68,58 @@ body {
 .overlay p {
   margin: 0;
   font-size: 28px;
+}
+.sub-title {
+  text-align: center;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+.blogs .blog {
+  position: relative;
+  background-color: var(--color-grey-5);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.blogs .blog:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+.blogs .blog:hover img {
+  filter: grayscale(0);
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+.blogs .blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  filter: grayscale(100%);
+  transition: all 0.4s ease-in-out;
+}
+.blogs .blog .blog-text {
+  margin-top: -7px;
+  padding: 1.1rem;
+  border-top: 8px solid var(--color-secondary);
+}
+.blogs .blog .blog-text h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.blogs .blog .blog-text h4:hover {
+  color: var(--color-secondary);
+}
+.blogs .blog .blog-text p {
+  color: var(--color-grey-2);
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
