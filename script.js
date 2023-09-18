@@ -1,4 +1,28 @@
-// const h2 = document.createElement("h2");
-// h2.textContent = "This content added by JavaScript";
+// const bgImageEl = document.getElementById("bigimage");
 
-// document.querySelector("body").appendChild(h2);
+// window.addEventListener("scroll", () => {
+//   updateImage();
+// });
+
+// function updateImage() {
+//   bgImageEl.style.opacity = 1 - window.pageYOffset / 900;
+//   bgImageEl.style.backgroundSize = 160 - window.pageYOffset / 12 + "%";
+// }
+
+const bigImage = document.querySelector(".big-image");
+
+// Get the computed style of the div
+const computedStyle = window.getComputedStyle(bigImage);
+
+// Get the background image URL
+const backgroundImage = computedStyle.getPropertyValue("background-image");
+
+console.log(backgroundImage);
+window.addEventListener("scroll", () => {
+  updateImage();
+});
+
+function updateImage() {
+  bigImage.style.opacity = 1 - window.pageYOffset / 900;
+  bigImage.style.backgroundSize = 160 - window.pageYOffset / 12 + "%";
+}
