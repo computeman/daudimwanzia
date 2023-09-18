@@ -9,7 +9,7 @@ This is me.I share about my skills, educational background, hobbies and my favou
 ## SCREENSHOTS
 - ![Screenshot from 2023-09-18 23-56-03](https://github.com/computeman/daudimwanzia/assets/29520365/2f7fb59e-a46d-467d-a495-0bbb5a0cd1f4)
 - ![Screenshot from 2023-09-18 23-58-16](https://github.com/computeman/daudimwanzia/assets/29520365/9dc4b616-f3e6-4acc-b9c9-612e91c6360d)
-- ![Screenshot from 2023-09-18 23-58-16](https://github.com/computeman/daudimwanzia/assets/29520365/d0767908-3fa6-467d-839e-61c7ba94bde4)
+- ![Screenshot from 2023-09-18 23-58-47](https://github.com/computeman/daudimwanzia/assets/29520365/674b29fb-c8e8-4b63-aed1-7fc565f0458e)
 ********
 ## SetUp Instruction
 ### Requirements
