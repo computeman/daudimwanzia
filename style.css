@@ -168,6 +168,9 @@ body {
   padding: 20px;
   text-align: center;
 }
+.skill-category.education{
+            grid-column: span 3;
+        }
 
 .skill-category h2 {
   font-size: 1.5rem;
