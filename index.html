@@ -19,6 +19,37 @@
       <div class="overlay">
         <h1>Hello, I'm Daudi Mwanzia</h1>
         <p>A passionate and certified Web developer.</p>
+        <br>
+        <!-- Social accounts - Fixed to the right -->
+        <div class="socials">
+          <a href="#" target="_blank"
+            ><img
+              src="./images/icons/x.svg"
+              alt="Twitter"
+              loading="lazy"
+              class="socicon"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./images/icons/Instagram.svg"
+              alt="Instagram"
+              loading="lazy"
+              class="socicon"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./images/icons/linkedin.svg"
+              alt="Linkedin"
+              loading="lazy"
+              class="socicon"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./images/icons/github-mark-white.svg"
+              alt="Github"
+              class="socicon"
+          /></a>
+        </div>
       </div>
     </div>
     <section>
@@ -131,6 +162,63 @@
         </div>
       </div>
     </section>
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="https://twitter.com/daudikm" target="_blank">Daudi Mwanzia</a>
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
