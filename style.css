@@ -12,7 +12,7 @@ body {
   transition: background-color 0.4s;
 }
 .navbar img {
-  height: 50px;
+  /* height: 50px; */
   width: 250px;
 }
 .navbar ul {
@@ -72,6 +72,49 @@ body {
 .sub-title {
   text-align: center;
 }
+
+/* skills */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.skill-category {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.skill-category h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.skill-category img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* blog */
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
