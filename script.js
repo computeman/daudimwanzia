@@ -1,14 +1,3 @@
-// const bgImageEl = document.getElementById("bigimage");
-
-// window.addEventListener("scroll", () => {
-//   updateImage();
-// });
-
-// function updateImage() {
-//   bgImageEl.style.opacity = 1 - window.pageYOffset / 900;
-//   bgImageEl.style.backgroundSize = 160 - window.pageYOffset / 12 + "%";
-// }
-
 const bigImage = document.querySelector(".big-image");
 
 // Get the computed style of the div
