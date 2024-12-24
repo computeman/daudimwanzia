@@ -1,0 +1,39 @@
+/* src/App.css */
+
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a192f;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #64ffda;
+}
+
+a:hover {
+  color: #52e0b7;
+}
+
+/* General container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Utility class for spacing */
+.mt-2 {
+  margin-top: 2rem;
+}
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}

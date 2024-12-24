@@ -1,0 +1,149 @@
+/* src/components/Blogs.css */
+
+.blogs-container {
+  padding: 2rem;
+  background-color: #0a192f;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blogs-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sub-title {
+  font-size: 2.5rem;
+  color: #64ffda;
+  position: relative;
+}
+
+.sub-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #64ffda;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Blogs List */
+.blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.blog {
+  background-color: #112240;
+  padding: 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.blog:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: #1b2c4a;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog:hover .blog-image {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-text h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #64ffda;
+  transition: color 0.3s ease;
+}
+
+.blog:hover .blog-text h4 {
+  color: #52e3bf;
+}
+
+.blog-text p {
+  font-size: 1.2rem;
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.blog-text button {
+  background-color: #64ffda;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  color: #0a192f;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog-text button:hover {
+  background-color: #52e3bf;
+  transform: scale(1.05);
+}
+
+.blog-text a {
+  text-decoration: none;
+}
+
+.blog-text a:hover button {
+  background-color: #52e3bf;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blog {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blogs {
+    flex-direction: column;
+  }
+
+  .blog {
+    width: 90%;
+  }
+
+  .sub-title {
+    font-size: 2rem;
+  }
+}
